@@ -1,0 +1,49 @@
+
+<!--
+Melanie De La Paz Islas
+#October 25th 2025
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title> Week 3 Shopping Project</title>
+
+</head>
+<body>
+    Name a situation where you would need to create an "if" statement.  (There are many answers to this question. )
+    You need if statements when you want to display certain results based on user input. 
+    For example, if you own a business that offers senior discounts, then prompting a user to enter their age
+    would activate a senior discount if it met the requirements. 
+
+    When comparing values,  in what data type is the result stored? (number, string, or Boolean?)
+    All comparison operators return a boolean value. It'll store whether the comparison is true or false.
+
+    <script>
+
+
+        "use strict";
+        
+        let shoppingTotal = Number(prompt('What is your shopping total?', '' ));
+        
+        let confirmed = confirm(`$${shoppingTotal} is this total correct?`);
+        
+        
+        if (shoppingTotal >= 100 ){
+            alert ("Total over $100 -> 20% discount!");
+        }
+        else if (shoppingTotal >= 50){
+            alert("Total over $50 -> 10% discount!");
+        }
+        else {
+            alert("Total under $50 -> No discount applied");
+        }
+    
+        </script>
+
+</body>
+</html>
+
+
+
+
