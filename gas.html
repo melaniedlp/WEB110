@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!-- Melanie De La Paz Islas 11/14/25-->
+
+<html lang="en">
+  <head>
+    <title>AVERAGE WEEKLY GAS PROJECT</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>
+    Questions 
+    </h1>
+    <p><strong> for (let i = 1; i<=5; i++) { console.log("Snack #" +i + " given to customer"); }
+    </strong></p>
+    <h2>Use the code above to answer these questions: How many times does a loop execute?</h2>
+    <h2>What is the purpose of a function?</h2>
+    <p><strong> This code loops 5 times. The purpose of a function is to condense code and return outputs. 
+    </strong></p>
+
+<script>
+
+let entryCount = 0;
+let total = 0;
+let userGas = 0;
+let averageGas = 0;
+
+const username = prompt("What is your name?: ");
+
+function calcGasAvg(){
+
+    
+   while (userGas !== -1){
+        total += userGas;
+        entryCount += 1;
+        userGas = parseFloat(prompt("What is your weekly gas total? Enter -1 to end."));
+    } 
+    let averageGas;
+    if (entryCount > 0){
+        averageGas = total / entryCount;
+    }
+    else {
+        averageGas = 0;
+    }
+    return averageGas
+    }
+let finalGas = calcGasAvg();
+confirm(username + " had a weekly gas average of " + finalGas );
+
+if (entryCount == 0){
+    alert("No weekly gas input detected");
+}
+else{
+    alert("You had " + entryCount + " number of gas entries")
+}
+
+
+</script>
+
+
+
+
+
+  </body>
+</html>
