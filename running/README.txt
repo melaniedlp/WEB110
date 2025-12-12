@@ -1,0 +1,3 @@
+README
+
+I love running and am currently training for a marathon. I created this project to combine my love of tech with my love for running. This project uses JavaScript to randomly generate some of my favorite famous running quotes. This will hopefully give me some inspiration before my runs. I used variables, functions, conditionals, arithemtic, built-in objects, DOM manipulation, and more to create an interactive page. 
