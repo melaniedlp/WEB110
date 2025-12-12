@@ -1,6 +1,5 @@
 // Running Quote Motivator
 // WEB 114 Final Project - Melanie De La Paz Islas
-// Array of running quotes (variable #1)
 const quotes = [
     "Do a little more each day than you think you possibly can.",
     "Your only competition is yourself.",
@@ -30,12 +29,12 @@ function generateQuote() {
     let numMiles = parseFloat(miles);   // convert to number
     // Check if input is valid
     if (isNaN(numMiles) || numMiles <= 0) {
-        runMessage.textContent = "Enter a real number next time!";
-        return; // stop function
+        runMessage.textContent = "That's not possible!";
+        return; //stop
     }
-    // Arithmetic + toFixed
+    // toFixed
     let doubled = (numMiles * 2).toFixed(1);
-    /* Conditionals + comparison + logical
+    /* Conditionals, comparison, and logical
        Give motivational message based on distance */
     if (numMiles >= 3 && numMiles < 6) {
         runMessage.textContent = "Nice short run, Have fun!";
